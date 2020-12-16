@@ -4,7 +4,10 @@
     color: white;
 }
 
-.navbar a {color: white;}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
 
 .navbar .active {color: rgb(145, 206, 226);}
 
