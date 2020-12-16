@@ -1,0 +1,10 @@
+.navbar {
+    padding-left: 20px;
+    background: #555;
+    color: white;
+}
+
+.navbar a {color: white;}
+.navbar .active {color: rgb(145, 206, 226);}
+
+.navbar-nav {padding-right: 20px;}
