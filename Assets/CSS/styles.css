@@ -1,6 +1,8 @@
+body {background: #444;}
+
 .navbar {
     padding-left: 20px;
-    background: #555;
+    background: teal;
     color: white;
 }
 
@@ -24,7 +26,34 @@
 
 .jumbotron {
     background-image: url("../Images/spectrometer.png");
-    background-size: 100% 450px;
+    background-size: 100% 500px;
+    max-width: 1400px;
     background-repeat: no-repeat;
-    height: 450px;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#selfie {
+    max-width: 100%;
+    height: 100%;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    padding-bottom: 10px;
+}
+
+.wrapper {
+    margin: 10px 10px 10px 10px;
+}
+
+footer {
+    background: teal;
+    height: 50px;
 }
