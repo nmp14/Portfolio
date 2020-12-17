@@ -21,3 +21,10 @@
 } 
 
 .navbar-nav {padding-right: 20px;}
+
+.jumbotron {
+    background-image: url("../Images/spectrometer.png");
+    background-size: 100% 450px;
+    background-repeat: no-repeat;
+    height: 450px;
+}
