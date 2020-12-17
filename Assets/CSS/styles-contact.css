@@ -1,0 +1,16 @@
+.card {
+    margin: 20px 0;
+    background: #ee9127;
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.icons {
+    background: white;
+    font-size: 18em;
+}
+
+#fb {
+    color: #3b5998;
+}
