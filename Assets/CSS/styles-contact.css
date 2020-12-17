@@ -3,13 +3,7 @@ a {
     color: lightblue;
 }
 
-h1 {
-    color: white;
-    margin-top: 20px;
-}
-
 .card {
-    margin: 20px 0;
     background: #ee9127;
     color: white;
     border-radius: 15px;

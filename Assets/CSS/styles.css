@@ -4,10 +4,9 @@ body {
 }
 
 .navbar {
-    padding-left: 20px;
     background: teal;
-    color: white;
     font-size: 1.3em;
+    padding-left: 20px;
 }
 .navbar-brand {
     font-size: 1.2em;
