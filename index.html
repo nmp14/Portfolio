@@ -14,6 +14,7 @@
 
 <body>
     <div class="main-container">
+
         <nav class="navbar navbar-expand-lg text-light">
             <div class="navbar-brand"><a href="index.html">Nathan Peek</a></div>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -39,92 +40,88 @@
         <div class="jumbotron jumbotron-fluid sharp my-0"></div>
 
         <main class="container-fluid bg-light">
-            <!--Row containing all main content-->
+
+            <!--Welcome header-->
             <div class="row my-0 pt-3 pb-0">
                 <div class="col text-center">
-                    <h1>Welcome to my homepage!</h1>
+                    <h1>Welcome to my Homepage!</h1>
                 </div>
             </div>
             <hr>
-            <div class="row">
-                <div class="col-8">
-                    <h2 class="text-center">About me!</h2>
+
+            <!--Primary row for containing all main section content-->
+            <div class="row my-0">
+                <!--Column for selfie-->
+                <section class="col-xl-4 text-center px-0 mx-0 pb-3">
+                    <img id="selfie" class="sharp float-md-left" src="Assets/Images/SelfAtWorkV2.png"
+                        alt="Selfie at work">
+                </section>
+                <!--About me column-->
+                <section class="col-xl-4 mx-lg-2 mx-xl-0">
+                    <h2 class="">About me!</h2>
+
+                    <!--Subrow for About me content-->
                     <div class="row">
-                        <div class="col-lg-5 text-center pb-sm-3 pb-lg-5">
-                            <img id="selfie" class="sharp float-md-left" src="Assets/Images/SelfAtWorkV2.png"
-                                alt="Selfie at work">
-                        </div>
-                        <div class="col-lg-7 ml-0 pb-5">
-                            <p>An upcoming web developer based in Tallahassee, Florida
-                                that
-                                loves
+                        <div class="col mx-lg-2 mx-xl-0">
+                            <p>An upcoming web developer based in Tallahassee, Florida, that loves
                                 problem solving and puzzles. Currently coasting through a full stack
-                                development
-                                bootcamp with the University of Miami.</p>
-                            <p>Graduated from Florida State University(FSU) with my Ph.D
-                                in
-                                inorganic chemistry in August, 2019. Currently working part time in a
-                                Postdoctoral
-                                Research
-                                position at FSU's chemistry department. I study the spectroscopic properties
-                                of
-                                silica-supported
-                                metal oxide catalysts, specifically The Phillips Catalyst, which accounts
-                                for
-                                approximately
-                                50% of the world's heigh-density polyethylene (HDPE) production.
+                                development bootcamp with the University of Miami.</p>
+                            <p>Graduated from Florida State University (FSU) with my Ph.D
+                                in inorganic chemistry in August, 2019. Currently working part time in a
+                                Postdoctoral Research position at FSU's chemistry department. I study the spectroscopic
+                                propertiesof silica-supported metal oxide catalysts, specifically The Phillips Catalyst,
+                                which accounts for approximately 50% of the world's heigh-density polyethylene (HDPE)
+                                production.
                             </p>
                             <p>Used to be a fairly decent Dance Dance Revolution(DDR) and
-                                In
-                                The
-                                Groove(ITG) player. Practiced everyday after school during senior year of
-                                highschool.
-                                Haven't played in a few years due to lack of machines nearby. Other hobbies
-                                include:
-                                tennis,
-                                games, anime. Oh, and I love Taco Bell and sushi!</p>
+                                In The Groove (ITG) player. Practiced everyday after school during senior year of
+                                high school. Haven't played in a few years due to lack of machines nearby. Other hobbies
+                                include: tennis, games, anime. Oh, and I love Taco Bell and sushi!</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-4">
+                </section>
+
+                <!--Column for skills info-->
+                <section class="col-xl-4">
                     <h2 class="text-center">Skills</h2>
+                    <!--Subrow for ol of skills-->
                     <div class="row">
-                        <div class="col-xl-6">
-                            <ul class="list-group py-lg-2 py-xl-4">
-                                <li class="list-group-item">HTML</li>
-                                <li class="list-group-item">CSS</li>
-                                <li class="list-group-item">Javascript</li>
+                        <div class="col-xl-6 mx-lg-2 mx-xl-0">
+                            <ul class="list-group py-2 py-xl-4">
+                                <li class="list-group-item text-center text-light border-light">HTML</li>
+                                <li class="list-group-item text-center text-light border-light">CSS</li>
+                                <li class="list-group-item text-center text-light border-light">Javascript</li>
                             </ul>
                         </div>
-                        <div class="col-xl-6">
-                            <ul class="list-group py-lg-2 py-xl-4">
-                                <li class="list-group-item">Git / Github</li>
-                                <li class="list-group-item">Bash</li>
-                                <li class="list-group-item">Python</li>
+                        <div class="col-xl-6 mx-lg-2 mx-xl-0">
+                            <ul class="list-group py-2 py-xl-4">
+                                <li class="list-group-item text-center text-light border-light">Git / Github</li>
+                                <li class="list-group-item text-center text-light border-light">Bash</li>
+                                <li class="list-group-item text-center text-light border-light">Python</li>
                             </ul>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </main>
 
         <!--Hobby images-->
-        <div class="row">
-            <div class="col-xl-3 col-sm-6">
+        <aside class="row">
+            <div class="col-xl-3 col-sm-6 px-0">
                 <img class="sharp" src="Assets/Images/groove.jpg" alt="In The Groove 2 machine">
             </div>
-            <div class="col-xl-3 col-sm-6">
-                <img class="sharp"
+            <div class="col-xl-3 col-sm-6 px-0">
+                <img class=" sharp"
                     src="https://img1.mashed.com/img/gallery/taco-bell-might-drop-these-popular-menu-items-heres-why/intro-1594915840.jpg"
                     alt="Taco bell food">
             </div>
-            <div class="col-xl-3 col-sm-6">
-                <img class="sharp" src="Assets/Images/FSU-tennis.jpg" alt="Image of the FSU tennis courts">
+            <div class="col-xl-3 col-sm-6 px-0">
+                <img class=" sharp" src="Assets/Images/FSU-tennis.jpg" alt="Image of the FSU tennis courts">
             </div>
-            <div class="col-xl-3 col-sm-6">
+            <div class="col-xl-3 col-sm-6 px-0">
                 <img class="sharp" src="Assets/Images/sushi.png" alt="Picture of sashimi">
             </div>
-        </div>
+        </aside>
 
         <footer></footer>
 
