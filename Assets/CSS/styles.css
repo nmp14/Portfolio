@@ -45,8 +45,8 @@ body {
     border-radius: 50%;
 }
 
-.row {
-    margin-bottom: 10px;
+#gradient-row {
+    background: linear-gradient(70deg, #d7f9ff  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #bdf3ff 60%, #7bf8ff 60%);
 }
 
 img {
