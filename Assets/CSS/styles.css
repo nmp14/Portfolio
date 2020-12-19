@@ -32,7 +32,7 @@ body {
 .jumbotron {
     background-image: url("../Images/spectrometer.png");
     background-size: 100% 600px;
-    max-width: 2000px;
+    max-width: 2800px;
     background-repeat: no-repeat;
     height: 600px;
     margin: 0 auto;
