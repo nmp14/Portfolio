@@ -112,7 +112,10 @@ nav i {
     transform-style: preserve-3d;
 }
 
-.cube.show-front  { transform: rotateY(   0deg); }
+.cube.show-front  {
+    transform: rotateY(  0deg); 
+    animation: rotateFront 1s linear;
+}
 .cube.show-right  { transform: rotateY( -90deg); }
 .cube.show-back   { transform: rotateY(-180deg); }
 .cube.show-left   { transform: rotateY(  90deg); }
@@ -131,6 +134,17 @@ nav i {
     }
     100% {
         transform: scale(1) rotateX(90deg) rotateY(0deg);
+    }
+}
+@keyframes rotateFront {
+    0% {
+        transform: scale(1) rotateX(90deg) rotateY(0deg);
+    }
+    50% {
+        transform: scale(0.8) rotateX(45deg) rotateY(20deg);
+    }
+    100% {
+        transform: scale(1) rotateX(0deg) rotateY(0deg);
     }
 }
 

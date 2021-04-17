@@ -1,24 +1,11 @@
-var cube = document.querySelector('.cube');
-var radioGroup = document.querySelector('.radio-group');
-var currentClass = 'show-front';
+const cube = document.querySelector('.cube');
+let currentClass = 'show-front';
 const downArrow = document.getElementById("downArrow");
 const navItems = document.querySelectorAll("nav");
 const port = document.getElementById("port");
 const navPage = document.getElementById("navPage");
 const navCloseBtns = document.querySelectorAll(".nav-close");
-
-function changeSide() {
-    if (radioGroup) var checkedRadio = radioGroup.querySelector(':checked');
-    const showClass = radioGroup ? 'show-' + checkedRadio.value : "show-front"
-    if (currentClass) {
-        cube.classList.remove(currentClass);
-    }
-    cube.classList.add(showClass);
-    currentClass = showClass;
-    console.log(currentClass);
-}
-// set initial side
-changeSide();
+const home = document.getElementById("home");
 
 // Go to portfolio page when down arrow is clicked
 const goToPortfolio = (e) => {
@@ -28,6 +15,19 @@ const goToPortfolio = (e) => {
     const showClass = "show-bottom";
     cube.classList.add(showClass);
     currentClass = "show-bottom"
+
+    if (!navPage.classList.contains("hidden")) {
+        navPage.classList.add("hidden");
+    }
+}
+// Go to front of cube (home)
+const goHome = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    cube.classList.remove(currentClass);
+    const showClass = "show-front";
+    cube.classList.add(showClass);
+    currentClass = "show-front"
 
     if (!navPage.classList.contains("hidden")) {
         navPage.classList.add("hidden");
@@ -54,7 +54,6 @@ const closeNavBar = (e) => {
     }, 700)
 }
 
-if (radioGroup) radioGroup.addEventListener('change', changeSide);
 if (downArrow) downArrow.addEventListener("click", goToPortfolio);
 if (navItems) {
     navItems.forEach(navItem => navItem.addEventListener("click", openNavBar));
@@ -62,4 +61,7 @@ if (navItems) {
 if (port) port.addEventListener("click", goToPortfolio);
 if (navCloseBtns) {
     navCloseBtns.forEach(btn => btn.addEventListener("click", closeNavBar));
+}
+if (home) {
+    home.addEventListener("click", goHome);
 }
