@@ -16,7 +16,7 @@
     <main class="site-cube">
         <div class="cube">
             <!-- front face of cube -->
-            <div class="cube-face cube-face-front">
+            <section class="cube-face cube-face-front">
                 <nav>
                     <i class="fas fa-bars"></i>
                 </nav>
@@ -41,16 +41,58 @@
                         <i class="fa fa-angle-down"></i>
                     </div>
                 </div>
-            </div>
+            </section>
             <div class="cube-face cube-face-back">
                 <h1>
                     Back
                 </h1>
             </div>
             <!-- bottom face of cube -->
-            <div class="cube-face cube-face-bottom">
-                <h1 class="center-text">My Portfolio</h1>
-            </div>
+            <section class="cube-face cube-face-bottom">
+                <nav class="relative">
+                    <h2 class="center-text">My Portfolio</h2> <span class="absolute-i"><i
+                            class="fas fa-bars"></i></span>
+                </nav>
+                <div class="portfolio">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="center-text">#Moods</h3>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/Images/moods_page-min.png">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="center-text">Stiegman Lab (FSU)</h3>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/Images/StiegmanLab-min.png">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="center-text">AniMoves</h3>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/Images/animove-min.png">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="center-text">BudgeGrub</h3>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/Images/BudgeGrub.png">
+                        </div>
+                    </div>
+                    <div class="card-end"></div>
+                </div>
+            </section>
+
             <div class="cube-face cube-face-top">
                 <h1>
                     top
@@ -69,7 +111,7 @@
         </div>
     </main>
 
-    <p class="radio-group">
+    <!-- <p class="radio-group">
         <label>
             <input type="radio" name="rotate-cube-side" value="front" /> front
         </label>
@@ -88,7 +130,7 @@
         <label>
             <input type="radio" name="rotate-cube-side" value="bottom" checked /> bottom
         </label>
-    </p>
+    </p> -->
     <script src="Assets/JS/index.js"></script>
 </body>
 
