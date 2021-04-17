@@ -13,9 +13,13 @@
 </head>
 
 <body>
-    <div class="site-cube">
+    <main class="site-cube">
         <div class="cube">
+            <!-- front face of cube -->
             <div class="cube-face cube-face-front">
+                <nav>
+                    <i class="fas fa-bars"></i>
+                </nav>
                 <div class="center-me custom-flex flex-align">
                     <div>
                         <h1>Nathan Peek</h1>
@@ -29,11 +33,13 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Down arrow for portfolio -->
                 <div class="arrow-container">
-                    <div class="arrow-2">
+                    <h2 class="center-text portfolio">Portfolio</h2>
+                    <div id="downArrow" class="arrow-2">
                         <i class="fa fa-angle-down"></i>
                     </div>
-                    <div class="arrow-1"></div>
                 </div>
             </div>
             <div class="cube-face cube-face-back">
@@ -41,10 +47,9 @@
                     Back
                 </h1>
             </div>
+            <!-- bottom face of cube -->
             <div class="cube-face cube-face-bottom">
-                <h1>
-                    bottom
-                </h1>
+                <h1 class="center-text">My Portfolio</h1>
             </div>
             <div class="cube-face cube-face-top">
                 <h1>
@@ -62,10 +67,11 @@
                 </h1>
             </div>
         </div>
-    </div>
+    </main>
+
     <p class="radio-group">
         <label>
-            <input type="radio" name="rotate-cube-side" value="front" checked /> front
+            <input type="radio" name="rotate-cube-side" value="front" /> front
         </label>
         <label>
             <input type="radio" name="rotate-cube-side" value="right" /> right
@@ -80,11 +86,9 @@
             <input type="radio" name="rotate-cube-side" value="top" /> top
         </label>
         <label>
-            <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+            <input type="radio" name="rotate-cube-side" value="bottom" checked /> bottom
         </label>
     </p>
-
-
     <script src="Assets/JS/index.js"></script>
 </body>
 
