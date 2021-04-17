@@ -1,3 +1,7 @@
+html, body {
+    min-height: 100%;
+}
+
 body {
     background: #444;
     position: relative;
@@ -30,13 +34,17 @@ body {
 .navbar-nav {padding-right: 20px;}
 
 .jumbotron {
-    background-image: url("../Images/spectrometer.png");
-    background-size: 100% 600px;
+    background-image: linear-gradient(teal 0%, 35%, blue 90%), 
+    linear-gradient(to right, teal 0%, 40%, purple 90%),
+    url("../Images/spectrometer-min.png");
+    background-blend-mode: lighten, screen, difference;
+    background-size: 100% 650px;
     max-width: 3000px;
+    background-position-x: center;
+    background-position-y: -50px;
     background-repeat: no-repeat;
-    height: 600px;
-    margin: 0 auto;
-    margin-bottom: 15px;
+    background-attachment: fixed;
+    min-height: 500px;
 }
 
 #selfie {
@@ -75,14 +83,14 @@ footer {
 
 @media screen and (min-width: 2000px) {
  .jumbotron {
-    height: 800px;
+    min-height: 800px;
     background-size: 100% 800px;
  }
 }
 
 @media screen and (max-width: 600px) {
     .jumbotron {
-        height: 400px;
-        background-size: 100% 400px;
+        min-height: 400px;
+        background-position-y: -100px;
     }
 }
