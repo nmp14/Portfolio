@@ -3,131 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathan Peek</title>
-    <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!--Custom CSS-->
-    <link href="Assets/CSS/styles.css" type="text/css" rel="stylesheet">
+    <title>Nathan P.</title>
+    <link rel="stylesheet" href="Assets/CSS/home.css">
 </head>
 
 <body>
-    <div class="main-container">
+    <main class="cube-holder">
+        <div class="cube">
+            <div class="cube-face cube-face-front">front</div>
+            <div class="cube-face cube-face-back">back</div>
+            <div class="cube-face cube-face-left">left</div>
+            <div class="cube-face cube-face-right">right</div>
+            <div class="cube-face cube-face-top">top</div>
+            <div class="cube-face cube-face-bottom">bottom</div>
+        </div>
+    </main>
 
-        <nav class="navbar navbar-expand-lg text-light">
-            <div class="navbar-brand"><a href="index.html">Nathan Peek</a></div>
-            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact-info.html">Contact Info</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <!--For Background Image-->
-        <div class="jumbotron sharp my-0"></div>
-
-        <!--Div for gradient colored background-->
-        <main id="gradient-row" class="container-fluid">
-            <!--Welcome header-->
-            <div class="row my-0 pt-3 pb-3">
-                <div class="col text-center">
-                    <h1>Nathan Peek, <i>PhD (Chemistry)</i></h1>
-                </div>
-            </div>
-
-            <!--Primary row for containing all main section content-->
-            <div class="row py-3">
-                <!--Column for selfie-->
-                <figure class="col-xl-4 text-center px-0 mx-0 pb-3">
-                    <img id="selfie" class="sharp float-md-left" src="Assets/Images/SelfAtWorkV2-min.png"
-                        alt="Selfie at work">
-                </figure>
-                <!--About me column-->
-                <section class="col-xl-4 mx-lg-2 mx-xl-0">
-                    <h2 class="">About me!</h2>
-
-                    <p>Enthusiastic Web Developer coming from a chemistry background that instilled critical thinking
-                        and an objective mindset. Successsfully obtained a full-stack certificate from the University of
-                        Miami Coding Bootcamp. Developed several individual and group projects that are listed in the
-                        Portfolio section of this site.</p>
-                    <p>Graduated from Florida State University (FSU) with a <i>PhD</i>
-                        in inorganic chemistry in August, 2019. Currently working part time in a
-                        Postdoctoral Research position at FSU's chemistry department studying the
-                        spectroscopic
-                        properties of silica-supported metal oxide catalysts, specifically The Phillips
-                        Catalyst,
-                        which accounts for approximately 50% of the world's heigh-density polyethylene
-                        (HDPE) production.
-                    </p>
-                    <p>Used to be a fairly decent Dance Dance Revolution (DDR) and
-                        In The Groove (ITG) player. I practiced every day after school during
-                        12<sup>th</sup> grade at the nearby mall. Haven't played in a few years due to lack of
-                        machines nearby.
-                        Other hobbies
-                        include: tennis, games, anime. Oh, and I love Taco Bell, sushi, and I am oddly addicted
-                        to Buffalo Wild Wing's buffalo chicken wrap!</p>
-                </section>
-
-                <!--Column for skills info-->
-                <section class="col-xl-4">
-                    <h2 class="text-center">Skills</h2>
-                    <!--Subrow for ol of skills-->
-                    <div class="row">
-                        <div class="col-xl-6 mx-lg-2 mx-xl-0">
-                            <ul class="list-group py-2">
-                                <li class="list-group-item text-center text-light border-light">HTML</li>
-                                <li class="list-group-item text-center text-light border-light">CSS</li>
-                                <li class="list-group-item text-center text-light border-light">Javascript</li>
-                                <li class="list-group-item text-center text-light border-light">SQL / Sequelize</li>
-                                <li class="list-group-item text-center text-light border-light">Handlebars</li>
-                            </ul>
-                        </div>
-                        <div class="col-xl-6 mx-lg-2 mx-xl-0">
-                            <ul class="list-group py-2">
-                                <li class="list-group-item text-center text-light border-light">Git / Github</li>
-                                <li class="list-group-item text-center text-light border-light">Bash</li>
-                                <li class="list-group-item text-center text-light border-light">Python</li>
-                                <li class="list-group-item text-center text-light border-light">noSQL</li>
-                                <li class="list-group-item text-center text-light border-light">React</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center col-xl-12">
-                            <h2>Resume</h2>
-                            <a href="./resume.html">View Resume HTML/CSS (not mobile friendly)</a>
-                            <br>
-                            <a href="#">View Resume PDF of word doc</a>
-                            <div>
-                                <button class="btn btn-primary my-3">Download HTML Resume</button>
-                                <button class="btn btn-primary my-3">Download Normal Resume</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </main>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/d81acf0f70.js" crossorigin="anonymous"></script>
+    <!-- <script src="Assets/JS/index.js"></script> -->
 </body>
 
 </html>
