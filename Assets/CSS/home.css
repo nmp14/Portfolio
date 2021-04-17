@@ -56,9 +56,9 @@ a {
 /* End cube styling and now style the faces (aka the page content) */
 
 .cube .cube-face-front {
-	background: linear-gradient(-45deg, #52d4dd, #e73c7e, #6c1eb4, teal);
+	background: linear-gradient(to bottom right, #52d4dd,teal, #6c1eb4, #e73c7e);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 15s ease-in infinite;
     color: white;
     font-size: 1.5em;
 }
