@@ -281,11 +281,21 @@ nav i {
 .cube .cube-face-left .info {
     width: 50%;
     height: 70vh;
-    background: rgb(0, 0, 105);
-    color: rgb(226, 226, 226);
+    background: rgb(0, 0, 92);
+    color: rgb(187, 228, 255);
     padding: 25px;
-    line-height: 1.5em;
+    line-height: 1.6em;
 }
+.cube .cube-face-left .info h3 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.3em;
+    margin-bottom: 0;
+}
+.cube .cube-face-left .info p {
+    font-size: 22px;
+}
+
 .info p {
     font-size: 1.1em;
 }
@@ -383,9 +393,7 @@ nav i {
 }
 
 @media only screen and (max-width: 900px) {
-    #aboutMeFlex {
-        display: block;
-    }
+    #aboutMeFlex {display: block;}
     .cube-face-left .selfie,
     .cube-face-left .info {
         width: 100% !important;
@@ -395,21 +403,20 @@ nav i {
         display: flex;
         justify-content: center;
     }
-    .cube-face-left .selfie img {
-        max-width: 600px !important;
-    }
-    .cube-face-left .info {
-        position: relative !important;
-    }
+    .cube-face-left .selfie img {max-width: 600px !important;}
+    .cube-face-left .info {position: relative !important;}
+
+    .cube .cube-face-left .info h3 {font-size: 26px;}
+    .cube .cube-face-left .info p {font-size: 18px;}
     /* Carrot leading to hobbies section on smaller screens */
     .cube-face-left .info::before,
     .cube-face-left .info::after {
         content: "";
         width: 75px;
         height: 40px;
-        background: rgb(0, 0, 105);
+        background: rgb(0, 0, 92);
         position: absolute;
-        bottom: -0.9em;
+        bottom: -0.8em;
         z-index: 2;
     }
     .cube-face-left .info::before {
