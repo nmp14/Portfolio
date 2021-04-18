@@ -119,7 +119,10 @@ nav i {
     transform: rotateY(  0deg); 
     animation: rotateFront 1s linear;
 }
-.cube.show-right  { transform: rotateY( -90deg); }
+.cube.show-right  { 
+    transform: rotateY( -90deg); 
+    animation: rotateRight 1s linear;
+}
 .cube.show-back   { transform: rotateY(-180deg); }
 .cube.show-left   { 
     animation: rotateLeft 1s linear;
@@ -164,6 +167,17 @@ nav i {
         transform: scale(1) rotateX(0deg) rotateY(90deg);
     }
 }
+@keyframes rotateRight {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8) rotateX(45deg) rotateY(-45deg);
+    }
+    100% {
+        transform: scale(1) rotateX(0deg) rotateY(-90deg);
+    }
+}
 
 .cube-face {
   position: absolute;
@@ -172,7 +186,6 @@ nav i {
   overflow-x: hidden;
 }
 
-.cube-face-right  { background: hsla( 60, 100%, 50%); }
 .cube-face-back   { background: hsla(120, 100%, 50%); }
 .cube-face-left   { background: teal; }
 .cube-face-top    { background: hsla(240, 100%, 50%) transparent; }
@@ -342,6 +355,7 @@ nav i {
 .hobbies ul li:last-child::after {
     display: none;
 }
+/* End cube-face-left and resume in its own css file (right face)*/
 
 /* custom flex classes */
 .custom-flex {
