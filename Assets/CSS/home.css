@@ -19,12 +19,14 @@ nav {
     margin: 20px 30px;
 }
 .nav-page {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: #0450c4;
     opacity: 0.8;
-    z-index: 5;
+    z-index: 10;
 }
 .nav-page a {
     color: #fff;
@@ -89,7 +91,7 @@ nav i {
 .center-text {
     text-align: center;
 }
-
+/* Style x button for navbar */
 .relative {
     position: relative;
 }
@@ -109,6 +111,7 @@ nav i {
     width: 100%;
     height: 100%;
     position: relative;
+    z-index: 1;
     transform-style: preserve-3d;
 }
 
@@ -118,7 +121,10 @@ nav i {
 }
 .cube.show-right  { transform: rotateY( -90deg); }
 .cube.show-back   { transform: rotateY(-180deg); }
-.cube.show-left   { transform: rotateY(  90deg); }
+.cube.show-left   { 
+    animation: rotateLeft 1s linear;
+    transform: rotateY(  90deg);
+ }
 .cube.show-top    { transform: rotateX( -90deg); }
 .cube.show-bottom { 
     animation: rotateBottom 1s linear;
@@ -145,6 +151,17 @@ nav i {
     }
     100% {
         transform: scale(1) rotateX(0deg) rotateY(0deg);
+    }
+}
+@keyframes rotateLeft {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(0.8) rotateX(45deg) rotateY(45deg);
+    }
+    100% {
+        transform: scale(1) rotateX(0deg) rotateY(90deg);
     }
 }
 
