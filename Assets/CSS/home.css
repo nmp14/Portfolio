@@ -289,6 +289,18 @@ nav i {
 .info p {
     font-size: 1.1em;
 }
+
+.cube-face-left .hobbies {
+    width: 100%;
+    background: #24abff;
+    color: rgb(226, 226, 226);
+}
+.cube-face-left .hobbies h4 {
+    margin: 0;
+    font-size: 22px;
+    padding: 35px 0;
+}
+
 /* custom flex classes */
 .custom-flex {
     display: flex;
@@ -385,5 +397,27 @@ nav i {
     }
     .cube-face-left .selfie img {
         max-width: 600px !important;
+    }
+    .cube-face-left .info {
+        position: relative !important;
+    }
+    /* Carrot leading to hobbies section on smaller screens */
+    .cube-face-left .info::before,
+    .cube-face-left .info::after {
+        content: "";
+        width: 75px;
+        height: 40px;
+        background: rgb(0, 0, 105);
+        position: absolute;
+        bottom: -0.9em;
+        z-index: 2;
+    }
+    .cube-face-left .info::before {
+        right: 50%;
+        transform: skew(0, 20deg);
+    }
+    .cube-face-left .info::after {
+        left: 50%;
+        transform: skew(0, -20deg);
     }
 }
