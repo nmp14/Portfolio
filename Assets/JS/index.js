@@ -1,11 +1,16 @@
 const cube = document.querySelector('.cube');
 let currentClass = 'show-front';
 const downArrow = document.getElementById("downArrow");
+// navbar opener icon
 const navItems = document.querySelectorAll("nav");
+// portfolio
 const port = document.getElementById("port");
+// Nav page container
 const navPage = document.getElementById("navPage");
+// Nav bar btns and link events
 const navCloseBtns = document.querySelectorAll(".nav-close");
 const home = document.getElementById("home");
+const aboutMePage = document.getElementById("aboutMePage");
 
 // Go to portfolio page when down arrow is clicked
 const goToPortfolio = (e) => {
@@ -54,6 +59,20 @@ const closeNavBar = (e) => {
     }, 700)
 }
 
+const goToAboutMe = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    cube.classList.remove(currentClass);
+    const showClass = "show-left";
+    cube.classList.add(showClass);
+    currentClass = "show-left"
+
+    if (!navPage.classList.contains("hidden")) {
+        navPage.classList.add("hidden");
+    }
+}
+
 if (downArrow) downArrow.addEventListener("click", goToPortfolio);
 if (navItems) {
     navItems.forEach(navItem => navItem.addEventListener("click", openNavBar));
@@ -65,3 +84,4 @@ if (navCloseBtns) {
 if (home) {
     home.addEventListener("click", goHome);
 }
+if (aboutMePage) aboutMePage.addEventListener("click", goToAboutMe);
