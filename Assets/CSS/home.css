@@ -220,13 +220,14 @@ nav i {
 		background-position: 0% 20%;
 	}
 }
-/* End first face. Start bottom cube face */
+/* End first (Front) face. Start bottom cube face */
 .cube .cube-face-bottom {
     background: #111;
     color: #c7fbff
 }
 
-.cube .cube-face-bottom h2 {
+.cube .cube-face-bottom h2,
+.cube .cube-face-left h2 {
     margin: 30px;
     font-size: 30px;
 }
@@ -263,6 +264,30 @@ nav i {
 .card-end {
     width: 100%;
     min-height: 30px;
+}
+/* End bottom face. Start left face (about me) */
+.cube .cube-face-left {
+    background: #fff;
+    color: black;
+}
+.cube .cube-face-left .selfie {
+    width: 50%;
+    height: 70vh;
+}
+.cube .cube-face-left .selfie img {
+    width: 100%;
+    height: 100%;
+}
+.cube .cube-face-left .info {
+    width: 50%;
+    height: 70vh;
+    background: rgb(0, 0, 105);
+    color: rgb(226, 226, 226);
+    padding: 25px;
+    line-height: 1.5em;
+}
+.info p {
+    font-size: 1.1em;
 }
 /* custom flex classes */
 .custom-flex {
@@ -342,5 +367,23 @@ nav i {
     }
     .portfolio .card .card-body{
         height: 600px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #aboutMeFlex {
+        display: block;
+    }
+    .cube-face-left .selfie,
+    .cube-face-left .info {
+        width: 100% !important;
+        height: initial !important;
+    }
+    .cube-face-left .selfie {
+        display: flex;
+        justify-content: center;
+    }
+    .cube-face-left .selfie img {
+        max-width: 600px !important;
     }
 }
