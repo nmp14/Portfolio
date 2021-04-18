@@ -355,7 +355,11 @@ nav i {
 .hobbies ul li:last-child::after {
     display: none;
 }
-/* End cube-face-left and resume in its own css file (right face)*/
+/* End cube-face-left. Start right*/
+.cube .cube-face-right {
+    background: #fff;
+}
+.cube-face-right nav { font-size: 1.5em;}
 
 /* custom flex classes */
 .custom-flex {
