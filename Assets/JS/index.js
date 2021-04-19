@@ -1,7 +1,7 @@
 const cube = document.querySelector('.cube');
 const downArrow = document.getElementById("downArrow");
 // navbar opener icon
-const navItems = document.querySelectorAll("nav");
+const navItems = document.querySelectorAll("nav i");
 // portfolio
 const port = document.getElementById("port");
 // Nav page container
