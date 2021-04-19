@@ -56,6 +56,9 @@ nav {
 /* Slide animations for height of navBar page */
 .slideIn {
     animation: slideIn 0.7s linear;
+    -webkit-animation: slideIn 0.7s linear;
+    -moz-animation: slideIn 0.7s linear;
+    -ms-animation: slideIn 0.7s linear;
 }
 @keyframes slideIn {
     0% {
@@ -65,10 +68,61 @@ nav {
         height: 100%;
     }
 }
+@-webkit-keyframes slideIn {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+@-moz-keyframes slideIn {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+@-ms-keyframes slideIn {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
 .slideOut {
     animation: slideOut 0.7s linear;
+    -webkit-animation: slideOut 0.7s linear;
+    -moz-animation: slideOut 0.7s linear;
+    -ms-animation: slideOut 0.7s linear;
 }
 @keyframes slideOut {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+@-webkit-keyframes slideOut {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+@-moz-keyframes slideOut {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+@-ms-keyframes slideOut {
     0% {
         height: 100%;
     }
