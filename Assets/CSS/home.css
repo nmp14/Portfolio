@@ -26,6 +26,9 @@ nav {
     bottom: 0;
     background: #0450c4;
     opacity: 0.8;
+    /* Add transform for safari compatibility.
+    Needs to be greater than transform of other elements (aka the cube faces */
+    transform: translate3d(0, 0, 51vh);
     z-index: 10;
 }
 .nav-page a {
