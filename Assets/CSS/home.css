@@ -341,6 +341,10 @@ nav i {
 .cube .cube-face-left {
     background: #fff;
     color: black;
+    overflow-y: scroll !important;
+}
+.cube-face-left h2 {
+    font-size: 36px !important;
 }
 .cube .cube-face-left .selfie {
     width: 50%;
