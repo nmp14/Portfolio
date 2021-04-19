@@ -271,6 +271,8 @@ nav i {
     font-size: 2.0em;
     justify-content: space-around;
     color: rgb(119, 189, 255);
+    max-width: 300px;
+    margin: 0 auto;
 }
 /* keyframes for gradient used in cube-face-front Manuel Pinto*/
 @keyframes gradient {
