@@ -10,7 +10,6 @@ const navPage = document.getElementById("navPage");
 const navCloseBtns = document.querySelectorAll(".nav-close");
 const home = document.getElementById("home");
 const aboutMePage = document.getElementById("aboutMePage");
-const resumePage = document.getElementById("resumePage");
 
 let currentClass = 'show-front';
 
@@ -81,20 +80,6 @@ const goToAboutMe = (e) => {
     }
 }
 
-const goToResume = e => {
-    e.preventDefault();
-    e.stopPropagation();
-
-    cube.classList.remove(currentClass);
-    const showClass = "show-right";
-    cube.classList.add(showClass);
-    currentClass = "show-right"
-
-    if (!navPage.classList.contains("hidden")) {
-        navPage.classList.add("hidden");
-    }
-}
-
 if (downArrow) downArrow.addEventListener("click", goToPortfolio);
 if (navItems) {
     navItems.forEach(navItem => navItem.addEventListener("click", openNavBar));
@@ -107,4 +92,3 @@ if (home) {
     home.addEventListener("click", goHome);
 }
 if (aboutMePage) aboutMePage.addEventListener("click", goToAboutMe);
-if (resumePage) resumePage.addEventListener("click", goToResume);
