@@ -128,7 +128,8 @@ const getProject = function (e) {
         case "stiegman-lab":
             title = "Stiegman Lab Database";
             description = `Site and database for the Stiegman Lab at Florida State University (FSU) Chemistry Department. Requires current member to register new accounts (guests cant register themselves).
-
+            <br>
+            <br>
             Update: Only currently will be used as a database for lab chemicals. Informational site will be deployed through university (WIP).`
             techArr = ["JavaScript, Handlebars.js", "Sequelize"];
             url = "https://stiegman-lab.herokuapp.com/"
@@ -145,8 +146,9 @@ const getProject = function (e) {
         case "ani-moves":
             title = "AniMoves";
             description = `WIP clone of myanimelist.org for keeping track of my own anime and movies all in one app. Can register and add animes / movies that are in the database to a favorite lists or to watch list. Primarily for practice with Mongoose ODM.
-            
-            Not deloyed yet`;
+            <br>
+            <br>
+            Not deployed yet`;
             techArr = ["JavaScript", "Mongoose ODM", "Express.js", "Particles.js"];
             url = "#";
             displayProject(title, description, techArr, url, role);
