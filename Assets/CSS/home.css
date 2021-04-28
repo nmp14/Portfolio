@@ -309,6 +309,7 @@ nav i {
     background: orange !important;
     margin: 50px auto;
 }
+.portfolio {position: relative;}
 .portfolio #portfolioHeader {font-size: 24px; padding-top: 20px;}
 .portfolio .card {
     display: inline-block;
@@ -341,7 +342,7 @@ nav i {
 
 .project-descriptions {
     position: absolute;
-    top: 0;
+    top:0;
     bottom: 0;
     left: 0;
     right: 0;
