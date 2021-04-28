@@ -337,6 +337,39 @@ nav i {
     width: 100%;
     min-height: 30px;
 }
+
+.project-descriptions {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background: #555;
+}
+.project-descriptions #projectTitle {
+    font-size: 32px;
+    color: rgb(0, 214, 214)
+}
+.project-descriptions .project-description-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 5px;
+    font-size: 22px;
+    color: #fff;
+}
+.project-descriptions .project-description-container h5 {font-size: 28px; padding: 0; margin: 0; color: rgb(0, 214, 214)}
+.project-descriptions button {
+    border: none;
+    background-color: rgb(0, 132, 255);
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin: 20px 0;
+}
 /* End bottom face. Start left face (about me) */
 .cube .cube-face-left {
     background: #fff;
@@ -557,5 +590,13 @@ nav i {
         height: 75px;
         left: 73px;
         bottom: -75px;
+    }
+
+    .project-descriptions #projectTitle {
+        font-size: 22px;
+    }
+    .project-descriptions .project-description-container {
+        font-size: 18px;
+        padding: 0 12px;
     }
 }
