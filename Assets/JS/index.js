@@ -12,6 +12,7 @@ const home = document.getElementById("home");
 const aboutMePage = document.getElementById("aboutMePage");
 // Query project images
 const getProjectInfo = document.querySelectorAll(".portfolio .card .card-body img");
+const goBackBtn = document.getElementById("goBack");
 
 let currentClass = 'show-front';
 
@@ -100,6 +101,9 @@ class Project {
     getUrl() {
         return this.url;
     }
+    getRole() {
+        return this.role;
+    }
 }
 
 // Function to determine which project to display
@@ -159,8 +163,40 @@ const getProject = function (e) {
 
 // Display selected project info
 const displayProject = (title, description, techArr, url, role = "Individual project") => {
+    // Scroll to top
+    location.href = "#";
+    location.href = "#top";
+    // Create project and add to html
     const ProjectToDisplay = new Project(title, description, techArr, url, role);
-    console.log(ProjectToDisplay);
+    document.getElementById("projectTitle").innerHTML = ProjectToDisplay.getTitle();
+    document.getElementById("projectInfo").innerHTML = ProjectToDisplay.getDescription();
+    document.getElementById("projectRole").innerHTML = ProjectToDisplay.getRole();
+
+    // Empty ul
+    document.getElementById("projectTech").replaceChildren();
+    // Populate ul
+    populateTech(ProjectToDisplay.tech);
+
+    document.getElementById("projectLink").setAttribute("href", ProjectToDisplay.getUrl());
+
+    document.getElementById("projectDescriptions").classList.remove("hidden");
+}
+// Loops through tech array and appends them as list items to ul.
+const populateTech = (arr) => {
+    arr.forEach(tech => {
+        const li = document.createElement("li");
+        li.innerHTML = tech;
+        document.getElementById("projectTech").append(li);
+    });
+}
+
+// hides project description
+const exitProjectDescription = (e) => {
+    e.preventDefault();
+
+    if (!document.getElementById("projectDescriptions").classList.contains("hidden")) {
+        document.getElementById("projectDescriptions").classList.add("hidden");
+    }
 }
 
 if (downArrow) downArrow.addEventListener("click", goToPortfolio);
@@ -179,3 +215,4 @@ if (aboutMePage) aboutMePage.addEventListener("click", goToAboutMe);
 if (getProjectInfo) {
     getProjectInfo.forEach(project => project.addEventListener("click", getProject));
 }
+if (goBackBtn) goBackBtn.addEventListener("click", exitProjectDescription);
