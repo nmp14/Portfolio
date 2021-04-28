@@ -309,7 +309,7 @@ nav i {
     background: orange !important;
     margin: 50px auto;
 }
-
+.portfolio #portfolioHeader {font-size: 24px; padding-top: 20px;}
 .portfolio .card {
     display: inline-block;
     width: 45%;
@@ -332,6 +332,7 @@ nav i {
 .portfolio .card .card-body img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 .card-end {
     width: 100%;
